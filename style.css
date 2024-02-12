@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    display: flex;
+    box-shadow: 0px 6px 6px rgba(41, 41, 41, 0.5);
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-con {
+    width: 50%;
+}
+
+.logo img {
+    margin: 0.8rem;
+}
+
+nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav a:hover {
+    color: green;
+}
+
+/* Home */
+
+#home {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.home-img {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.home-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.home-form {
+    position: absolute;
+    width: 25%;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    background-color: rgb(30, 50, 30);
+    color: #fff;
+    border-radius: 1rem;
+    top: 9rem;
+    z-index: 3;
+    right: 1rem;
+}
+
+.home-form h2,
+.home-form h1,
+.home-form p {
+    padding: 0.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input,
+.form button {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.form input {
+    width: 80%;
+}
+
+.form button {
+    cursor: pointer;
+    width: 30%;
+    background-color: rgb(129, 188, 40);
+    font-weight: bold;
+    /* color: #fff; */
+}
+
+.form button:hover {
+    background-color: rgb(191, 242, 115);
+}
+
+/* Highlights */
+#highlights {
+    height: 100vh;
+}
+
+#highlights h1 {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.highlights-container {
+    height: 90vh;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
+.left h2 {
+    text-align: center;
+    color: rgb(83, 222, 83);
+    margin: 2rem;
+}
+
+.left ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.left li {
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+    color: rgb(101, 100, 100);
+}
+
+.left i {
+    margin-right: 1rem;
+    color: rgb(0, 56, 0);
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+.right-container button span {
+    background-color: green;
+}
+
+
+/* Location */
+
+#location {
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: rgb(197, 243, 197);
+}
+
+#location h1 {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding-top: 2rem;
+
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.item h2 {
+    margin-top: 2rem;
+    color: green;
+}
+
+.grid {
+    background-color: rgb(197, 243, 197);
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border: 15px solid white;
+    border-radius: 0.8rem;
+}
+
+#item-1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#item-4 {
+    grid-row-start: -4;
+    grid-row-end: -1;
+    grid-column-start: 4;
+    grid-column-end: -1;
+
+}
+
+.grid-item {
+    padding: 1.5rem;
+}
+
+.grid-item h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid_item li {
+    padding: 1rem;
+}
+
+.grid-item button {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; 
+    width: 50%;
+}
+
+.grid-item button:hover {
+    background-color: rgb(24, 23, 23);
+}
+
+#item-3,
+#item-5,
+#item-8 {
+    background-color: rgb(161, 232, 201);
+    border-radius: 0.8rem;
+}
+
+#item-5 li,
+#item-8 li,
+#item-3 li {
+    padding: 0.5rem;
+    font-weight: bold;
+}
