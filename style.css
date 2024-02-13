@@ -16,10 +16,11 @@ nav {
 }
 
 .logo {
-    width: 40%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 3rem;
 }
 
 .img-con {
@@ -27,11 +28,11 @@ nav {
 }
 
 .logo img {
-    margin: 0.8rem;
+    margin: 1.5rem;
 }
 
 nav ul {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -42,12 +43,10 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-
 }
 
 nav li {
     list-style: none;
-
 }
 
 nav a:hover {
@@ -124,69 +123,58 @@ nav a:hover {
     background-color: rgb(191, 242, 115);
 }
 
-/* Highlights */
-#highlights {
+/* floor */
+#floor {
     height: 100vh;
 }
 
-#highlights h1 {
+#floor h1 {
     text-align: center;
     color: green;
     font-weight: bold;
     padding-top: 1rem;
 }
 
-.highlights-container {
+.floor-container {
     height: 90vh;
     margin-top: 2rem;
     display: flex;
+    justify-content: center;
+
 }
 
-.left {
-    width: 40%;
+.floor-card {
+    height: 450px;
+    width: 30vw;
+    border: 1px solid rgb(147, 146, 146);
+    margin-right: 2rem;
+    border-radius: 1rem;
+
 }
 
-.right {
-    width: 60%;
-}
-
-.left h2 {
-    text-align: center;
-    color: rgb(83, 222, 83);
-    margin: 2rem;
-}
-
-.left ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.left li {
-    padding: 1rem;
-    list-style: none;
-    font-size: 1.2rem;
-    color: rgb(101, 100, 100);
-}
-
-.left i {
-    margin-right: 1rem;
-    color: rgb(0, 56, 0);
-}
-
-.right img {
+.floor-card img {
     height: 100%;
     width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    object-fit: contain;
+    object-position: center;
 }
 
-.right-container button span {
+.floor-card h4 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
     background-color: green;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: white;
 }
-
 
 /* Location */
 
 #location {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     margin-top: 2rem;
     background-color: rgb(197, 243, 197);
@@ -232,6 +220,7 @@ nav a:hover {
     width: 100%;
     gap: 30px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .grid-container img {
@@ -276,8 +265,9 @@ nav a:hover {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    display: block; /* Make the button a block-level element */
-    margin: 0 auto; 
+    display: block;
+    /* Make the button a block-level element */
+    margin: 0 auto;
     width: 50%;
 }
 
@@ -298,3 +288,121 @@ nav a:hover {
     padding: 0.5rem;
     font-weight: bold;
 }
+
+/* About */
+
+#about {
+    height: 100vh;
+    width: 100%;
+    /* margin-top: 2rem; */
+    background-color: rgba(205, 243, 162, 0.64);
+}
+
+#about h1 {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding-top: 2rem;
+
+}
+
+.about-container{
+    display: flex;
+    padding-top: 2rem;
+}
+
+.about-img, .about-desc{
+    width: 50%;
+}
+
+.about-img, .about-desc{
+    padding: 1rem;
+}
+
+.about-img img{
+    height: 100%;
+    width: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+
+.about-desc{
+    display: flex;
+}
+
+.about-desc p{
+    align-self: center;
+    line-height: 2.15rem;
+}
+
+/* Contact */
+#contact{
+    height: 100vh;
+    width: 100%;
+}
+
+#contact h1 {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding-top: 2rem;
+
+}
+
+.contact-container{
+    display: flex;
+    margin: 1rem;
+}
+
+.map, form{
+    width: 50%;
+}
+
+.map{
+    display: flex;
+}
+
+.map iframe{
+    align-self: center;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column  ;
+    margin-bottom: 1rem;
+}
+
+.input-form label{
+    margin-left: 0.2rem;
+}
+
+.input-form input, .input-form textarea{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    outline:none;
+    border: 1px solid green
+}
+
+.form-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-btn button{
+    width: 30%;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(10, 196, 10);
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* footer  */
