@@ -189,11 +189,10 @@ nav a:hover {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    /* margin-bottom: 2rem; */
 
 }
 
-.floor-card {
+.floor-card1 {
     height: 450px;
     width: 30vw;
     margin: 1rem;
@@ -202,7 +201,7 @@ nav a:hover {
 
 }
 
-.floor-card img {
+.floor-card1 img {
     height: 100%;
     width: 100%;
     padding: 1rem;
@@ -211,7 +210,7 @@ nav a:hover {
     object-position: center;
 }
 
-.floor-card h4 {
+.floor-card1 h4 {
     text-align: center;
     margin-top: 2rem;
     font-weight: bold;
@@ -277,7 +276,7 @@ nav a:hover {
     height: 100%;
     width: 100%;
     border: 10px solid white;
-    border-radius: 0.8rem;  
+    border-radius: 0.8rem;
 }
 
 .grid-item h3 {
@@ -947,7 +946,7 @@ video:hover {
 
     }
 
-    .floor-card {
+    .floor-card1 {
         height: 450px;
         width: 40%;
         border: 1px solid rgb(147, 146, 146);
@@ -1013,5 +1012,136 @@ video:hover {
         line-height: 2.15rem;
     }
 
+
+}
+
+@media screen and (max-width: 643px) {
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .home-img {
+        width: 100%;
+        position: static;
+    }
+    
+    .home-img img {
+        height: 100%;
+        width: 100%;
+        object-position: top;
+    }
+    
+    .home-form {
+        border-radius: 0;
+        display: block;
+        position: static;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgb(30, 50, 30);
+        color: #fff;
+    }
+    
+    .home-form h3,
+    .home-form h4,
+    .home-form p {
+        text-align: center;
+        padding: 0.2rem;
+    }
+    
+    .home-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .home-form form input,
+    .home-form form button {
+        padding: 0.8rem;
+        border-radius: 1rem;
+        margin: 0.4rem;
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+    
+    .home-form form input {
+        width: 80%;
+    }
+    
+    .home-form form button {
+        cursor: pointer;
+        width: 30%;
+        background-color: rgb(129, 188, 40);
+        font-weight: bold;
+        /* color: #fff; */
+    }
+    
+    .home-form form button:hover {
+        background-color: rgb(191, 242, 115);
+    }
+
+    #floor {
+        display: block; 
+        height: 100%;
+    }
+
+    .floor-container {
+        height: 100%;
+        display: block;
+
+    }
+
+    .floor-card1 {
+        height: 350px;
+        width: 90%;
+        padding: 2rem;
+        margin: 2rem auto;
+        border: 1px solid rgb(147, 146, 146);
+        border-radius: 1rem;
+        
+    }
+
+    .floor-card1 h4{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .map,
+    .contact-container>form {
+        width: 100%;
+        padding: 1rem;
+    }
 
 }
