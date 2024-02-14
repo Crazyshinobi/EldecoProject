@@ -1,5 +1,6 @@
 const mobileNavbar = document.querySelector(".mobile-navbar");
 const menuIcon = document.querySelector(".menu");
+const body = document.querySelector("body"); // Select the body element
 
 let flag = 0;
 
@@ -7,10 +8,12 @@ menuIcon.addEventListener("click", function () {
   if (flag == 0) {
     mobileNavbar.style.display = "flex";
     menuIcon.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+    body.classList.add("no-scroll"); // Add a class to body to disable scrolling
     flag = 1;
   } else {
     mobileNavbar.style.display = "none";
     menuIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+    body.classList.remove("no-scroll"); // Remove the class to enable scrolling
     flag = 0;
   }
 });
@@ -18,6 +21,7 @@ menuIcon.addEventListener("click", function () {
 function closeMenu() {
   mobileNavbar.style.display = "none";
   menuIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  body.classList.remove("no-scroll"); // Remove the class to enable scrolling
 }
 
 // Add event listener for each link in mobile navbar
