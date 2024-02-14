@@ -91,27 +91,27 @@
     <!-- Floor -->
     <div id="floor">
         <h1>Master & Floor Plan</h1>
-        <div class="card-group">
-            <div class="card">
+        <div class="card-group mt-5">
+            <div class="card me-2">
                 <img src="./img/1.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center bg-success text-light rounded">3 BHK FLOOR PLAN</h5>
                 </div>
-                <button class="btn">Call Us</button>
+                <button class="btn" id="callButton">Call Us</button>
             </div>
-            <div class="card">
+            <div class="card me-2">
                 <img src="./img/2.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center bg-success text-light rounded">3 BHK + STUDY FLOOR PLAN</h5>
                 </div>
-                <button class="btn">Call Us</button>
+                <button class="btn" id="callButton">Call Us</button>
             </div>
-            <div class="card">
+            <div class="card me-2">
                 <img src="./img/3.svg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center bg-success text-light rounded">MASTER PLAN</h5>
                 </div>
-                <button class="btn">Call Us</button>
+                <button class="btn" id="callButton">Call Us</button>
             </div>
         </div>
     </div>
@@ -235,22 +235,22 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form action="">
+            <form action="https://getform.io/f/yb8pZgbv" method="POST">
                 <div class="input-form">
                     <label for="">Name</label>
-                    <input type="text" placeholder="Enter your name...." required />
+                    <input type="text" name="name" placeholder="Enter your name...."  required />
                 </div>
                 <div class="input-form">
                     <label for="">Email Address</label>
-                    <input type="email" placeholder="Enter your email address...." required />
+                    <input type="email"  name="email" placeholder="Enter your email address...." required />
                 </div>
                 <div class="input-form">
                     <label for="">Mobile Number</label>
-                    <input type="tel" placeholder="Enter your number...." required>
+                    <input type="tel" name="mobile-number" placeholder="Enter your number...." required>
                 </div>
                 <div class="input-form">
                     <label for="">Email your Message</label>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Enter your message..." required></textarea>
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Enter your message..." required></textarea>
                 </div>
                 <div class="form-btn">
                     <button>Submit</button>

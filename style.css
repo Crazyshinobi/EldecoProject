@@ -17,8 +17,11 @@ nav {
     display: flex;
     box-shadow: 0px 6px 6px rgba(41, 41, 41, 0.5);
     width: 100%;
-    z-index: 2;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
     align-items: center;
+    background-color: white;
 
 }
 
@@ -78,13 +81,14 @@ nav a:hover {
 .mobile-navbar {
     display: none;
     height: 100vh;
+    overflow-y: scroll;
     position: fixed;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(34, 52, 31);
-    z-index: 1000;
+    z-index: 2000;
     transition: all ease 0.5s;
 }
 
@@ -93,7 +97,7 @@ nav a:hover {
 }
 
 .mobile-navbar ul li {
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding: 0.8rem;
     text-align: center;
 }
@@ -109,9 +113,10 @@ nav a:hover {
 /* Home */
 
 #home {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     margin-top: 0.5rem;
+    padding-top: 12vh + 10px;
 }
 
 .home-img {
@@ -186,7 +191,7 @@ nav a:hover {
     text-align: center;
     color: green;
     font-weight: bold;
-    padding-top: 1rem;
+    padding-top: 8rem;
 }
 
 .card:hover img {
@@ -225,10 +230,10 @@ nav a:hover {
 }
 
 #location h1 {
+    padding-top: 6rem;
     text-align: center;
     color: green;
     font-weight: bold;
-    padding-top: 2rem;
 
 }
 
@@ -329,7 +334,7 @@ nav a:hover {
     text-align: center;
     color: green;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 6rem;
 
 }
 
@@ -377,7 +382,7 @@ nav a:hover {
     text-align: center;
     color: green;
     font-weight: bold;
-    padding-top: 2rem;
+    padding-top: 6rem;
 
 }
 
@@ -1011,6 +1016,16 @@ video:hover {
 }
 
 @media screen and (max-width: 643px) {
+    nav {
+        height: 8vh;
+        display: flex;
+        box-shadow: 0px 6px 6px rgba(41, 41, 41, 0.5);
+        width: 100%;
+        z-index: 10001;
+        align-items: center;
+    
+    }
+    
 
     .logo img {
         margin: 0.2rem;
@@ -1022,7 +1037,7 @@ video:hover {
         flex-direction: column;
         height: 100%;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .home-img {
@@ -1092,6 +1107,10 @@ video:hover {
         display: block;
         height: 100%;
     }
+
+    #floor h1, #location h1, #about h1, #contact h1{
+        padding-top: 4rem;
+    } 
 
     .floor-container {
         height: 100%;

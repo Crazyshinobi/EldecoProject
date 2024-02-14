@@ -55,3 +55,14 @@ window.addEventListener("resize", function (event) {
   // Call the function whenever the screen size changes
   swapItems();
 });
+
+document.getElementById("callButton").addEventListener("click", function () {
+  // Replace '1234567890' with the desired phone number
+  const phoneNumber = "9650524480";
+
+  // Construct the tel URI
+  const telUri = "tel:" + phoneNumber;
+
+  // Open the dialer with the tel URI
+  window.open(telUri);
+});
