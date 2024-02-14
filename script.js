@@ -56,13 +56,20 @@ window.addEventListener("resize", function (event) {
   swapItems();
 });
 
-document.getElementById("callButton").addEventListener("click", function () {
-  // Replace '1234567890' with the desired phone number
-  const phoneNumber = "9650524480";
+// Select all buttons with the ID "callButton"
+const callButtons = document.querySelectorAll("#callButton");
 
-  // Construct the tel URI
-  const telUri = "tel:" + phoneNumber;
+// Loop through each button and add the event listener
+callButtons.forEach(button => {
+  button.addEventListener("click", function () {
+    // Replace '1234567890' with the desired phone number
+    const phoneNumber = "9650524480";
 
-  // Open the dialer with the tel URI
-  window.open(telUri);
+    // Construct the tel URI
+    const telUri = "tel:" + phoneNumber;
+
+    // Open the dialer with the tel URI
+    window.open(telUri);
+  });
 });
+
