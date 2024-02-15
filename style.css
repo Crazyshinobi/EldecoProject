@@ -195,7 +195,7 @@ nav a:hover {
     padding-top: 8rem;
 }
 
-.card:hover img {
+.card img{
     filter: blur(5px); /* Adjust the blur amount as needed */
 }
 
@@ -205,21 +205,24 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
-    background-color: rgba(57, 184, 29, 0.7); /* Adjust the background color and opacity as needed */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.card:hover .btn {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1); /* Adjust the button scale as needed */
+.card button{
     background-color: rgba(57, 184, 29); /* Adjust the background color and opacity as needed */
     color: #fff;
     font-weight: bold;
 }
+
+.card button:hover{
+    background-color: rgba(57, 184, 29); /* Adjust the background color and opacity as needed */
+    color: #fff;
+    font-weight: bold;
+}
+
 
 /* Location */
 
