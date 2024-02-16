@@ -132,6 +132,23 @@ nav a:hover {
     display: block;
 }
 
+.home-banner {
+    position: absolute;
+    top: 14rem;
+    left: 2rem;
+    z-index: 2; 
+}
+
+.home-banner img{
+    height: 450px;
+    width: 450px;
+    opacity: 0.6;
+}
+
+.home-banner img:hover{
+    opacity: 1;
+}
+
 .home-form {
     position: absolute;
     width: 25%;
@@ -961,6 +978,9 @@ video:hover {
         text-align: right;
     }
 
+    .home-banner{
+        display: none;
+    }
     .home-form {
         position: absolute;
         width: 40%;
