@@ -63,7 +63,7 @@ const callButtons = document.querySelectorAll("#callButton");
 callButtons.forEach(button => {
   button.addEventListener("click", function () {
     // Replace '1234567890' with the desired phone number
-    const phoneNumber = "9650524480";
+    const phoneNumber = "9654980778";
 
     // Construct the tel URI
     const telUri = "tel:" + phoneNumber;
