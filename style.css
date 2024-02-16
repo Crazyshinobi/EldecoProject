@@ -43,7 +43,7 @@ nav {
 }
 
 nav ul {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -190,7 +190,7 @@ nav a:hover {
 
 #floor h1 {
     text-align: center;
-    color: green;
+    color: #14693C;
     font-weight: bold;
     padding-top: 8rem;
 }
@@ -212,7 +212,7 @@ nav a:hover {
 }
 
 .card button{
-    background-color: rgba(57, 184, 29); /* Adjust the background color and opacity as needed */
+    background-color: #14693C; /* Adjust the background color and opacity as needed */
     color: #fff;
     font-weight: bold;
 }
@@ -236,7 +236,7 @@ nav a:hover {
 #location h1 {
     padding-top: 6rem;
     text-align: center;
-    color: green;
+    color: #14693C;
     font-weight: bold;
 
 }
@@ -256,7 +256,7 @@ nav a:hover {
 
 .item h2 {
     margin-top: 2rem;
-    color: green;
+    color: #14693C;
 }
 
 .grid {
@@ -313,9 +313,10 @@ nav a:hover {
 #item-2,
 #item-3,
 #item-6 {
-    background-color: rgb(161, 232, 201);
+    background-color: #14693C;
     border-radius: 0.8rem;
     padding: 1.5rem;
+    color: #fff;
 }
 
 #item-2 li,
@@ -323,8 +324,41 @@ nav a:hover {
 #item-6 li {
     padding: 0.5rem;
     font-weight: bold;
+    list-style: disc;
 }
 
+/* Price List  */
+#price{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+}
+
+#price h1 {
+    text-align: center;
+    color: #14693C;
+    font-weight: bold;
+    padding-top: 4rem;
+
+}
+
+#price table{
+    margin: 1rem;
+}
+
+.table-div{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    /* height: auto; */
+}
+
+.table-div table th {
+    height: 15vh;
+}
 /* About */
 
 #about {
@@ -336,7 +370,7 @@ nav a:hover {
 
 #about h1 {
     text-align: center;
-    color: green;
+    color: #14693C;
     font-weight: bold;
     padding-top: 6rem;
 
@@ -374,6 +408,7 @@ nav a:hover {
 .about-desc p {
     align-self: center;
     line-height: 2.15rem;
+    text-align: justify;
 }
 
 /* Contact */
@@ -384,7 +419,7 @@ nav a:hover {
 
 #contact h1 {
     text-align: center;
-    color: green;
+    color: #14693C;
     font-weight: bold;
     padding-top: 6rem;
 
@@ -442,7 +477,7 @@ nav a:hover {
     border-radius: 1rem;
     outline: none;
     border: none;
-    background-color: rgb(10, 196, 10);
+    background-color: #14693C;
     color: #fff;
     font-weight: bold;
 }
@@ -459,7 +494,7 @@ a {
 }
 
 .foo_top_header_one {
-    background-color: #15151e;
+    background-color: #14693C;
     color: #fff;
 }
 
@@ -489,7 +524,7 @@ a {
 .kilimanjaro_single_contact_info>h5,
 .kilimanjaro_blog_area>a,
 .foo_top_header_one .kilimanjaro_part>p {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
 }
 
 p,
@@ -564,7 +599,7 @@ ul li {
 .kilimanjaro_widget a {
     border: 1px solid #333;
     border-radius: 6px;
-    color: #888;
+    color: #fff;
     display: inline-block;
     font-size: 13px;
     margin-bottom: 4px;
@@ -573,7 +608,7 @@ ul li {
 
 .kilimanjaro_links a {
     border-bottom: 1px solid #333;
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     display: block;
     font-size: 13px;
     margin-bottom: 5px;
@@ -581,7 +616,7 @@ ul li {
 }
 
 .kilimanjaro_links a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     font-size: 13px;
 }
 
@@ -693,7 +728,7 @@ ol li {
 
 .kilimanjaro_links a {
     border-bottom: 1px solid #333;
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     display: block;
     font-size: 13px;
     margin-bottom: 5px;
@@ -705,7 +740,7 @@ ol li {
 }
 
 .kilimanjaro_single_contact_info a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
 }
 
 .kilimanjaro_widget li a,
@@ -715,12 +750,12 @@ ol li {
 
 .kilimanjaro_widget li a:hover,
 .kilimanjaro_social_links a:hover {
-    background: #ff7272;
+    background: greenyellow;
     color: #fff;
 }
 
 .kilimanjaro_links li a:hover {
-    color: #ff7272;
+    color: greenyellow;
 }
 
 #scroll-top {
