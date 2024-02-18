@@ -132,6 +132,7 @@ nav a:hover {
     display: block;
 }
 
+
 .home-banner {
     position: absolute;
     top: 14rem;
@@ -979,7 +980,7 @@ video:hover {
     }
 
     .home-banner{
-        display: none;
+        /* display: none; */
     }
     .home-form {
         position: absolute;
@@ -1112,6 +1113,18 @@ video:hover {
         object-position: top;
     }
 
+    .home-banner{
+        top: 10%;
+        left: 20%;
+        right: 20%;
+        bottom: 10%;
+    }
+
+    .home-banner img{
+        height: 300px;
+        width: 300px;
+    }
+
     .home-form {
         border-radius: 0;
         display: block;
@@ -1225,4 +1238,19 @@ video:hover {
         padding: 1rem;
     }
 
+}
+
+@media screen and (max-width: 483px) {
+    .home-banner{
+        top: 10%;
+        left: 20%;
+        right: 20%;
+        bottom: 10%;
+        /* padding-bottom: 4dvi; */
+    }
+
+    .home-banner img{
+        height: 250px;
+        width: 250px;
+    }
 }
