@@ -980,7 +980,33 @@ video:hover {
     transform: translateY(2px);
 }
 
+/* Privacy Policy */
 
+.privacy-container{
+    margin: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.privacy-container h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.privacy-container h2{
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.privacy-container h3{
+    font-weight: bold;
+}
+
+.privacy-container p{
+    margin: 1rem 0;
+    line-height: 1.8rem;
+    text-align: justify;
+}
 /* Responsive Code Starts here  */
 
 @media screen and (max-width: 961px) {
