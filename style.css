@@ -201,6 +201,25 @@ nav a:hover {
     background-color: rgb(191, 242, 115);
 }
 
+/* hero desc  */
+#hero-desc{
+    height: 100%;
+}
+
+#hero-desc h1 {
+    text-align: center;
+    color: #14693C;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+
+#hero-desc p{
+    margin: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 2.5rem;;
+}
+
 /* floor */
 #floor {
     height: 100%;
